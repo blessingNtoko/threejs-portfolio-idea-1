@@ -32,6 +32,7 @@ function render() {
 
 // Torus
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+// const material = new THREE.MeshStandardMaterial({ color: 0xff5500 });
 const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
 const torus = new THREE.Mesh(geometry, material);
 
@@ -68,7 +69,7 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('./assets/images/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./assets/images/space3.jpeg');
 scene.background = spaceTexture;
 
 // Avatar
